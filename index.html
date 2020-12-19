@@ -1,0 +1,50 @@
+<html>
+
+<head>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title> My Family Book</title>
+
+</head>
+
+<body>
+
+<h1>My Family Book</h1>
+
+<img id="images"src="https://cdn4.vectorstock.com/i/1000x1000/83/43/happy-family-icon-multicolored-in-simple-figures-vector-19888343.jpg">
+
+<div>
+
+<button type="button" onclick="NEXT()">Next
+
+</button>
+
+</div>
+
+<p id="names">This is my family Book.</p>
+ 
+
+<script>
+    var names=["Hi,This is me(Aashita).Nice to meet you","This is my sister,Anwesha Maitin","This is my dog joe with me ,my didi and my brother","this is Joe","This is my Mother and Father","This is my Chachi whith my sisiter.","This is my Dadi, Anju Maitin.","And this is my Chachu and my brother."];
+
+var images=["me.jpg","didi.jpg","me,sis,joe,trijal.jpg","joe.jpg","mum&dad.jpg","didi,chaachi.jpg","dadi.jpg","chachu.jpg"];
+
+var i =0;
+function NEXT(){
+document.getElementById("names").innerHTML=names[i];
+document.getElementById("images").src=images[i];
+i++;
+if(i>6){
+i=0;
+}
+}
+
+</script>
+
+</body>
+
+</html>
